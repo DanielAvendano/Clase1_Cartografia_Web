@@ -17,10 +17,11 @@ ejemplo clase dos
  
 ![Tierra](https://i.blogs.es/227593/global-biosphere/1366_2000.jpg "Planeta Tierra")
 
-## Coronavirus 
+## Colombia
 
-Coronavirus en colombia 30 marzo 
-![Colombia](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcanaltrece.com.co%2Fuploads%2Fck-uploads%2F2020%2F03%2F30%2FCUANTOS-CASOS-CORONAVIRUS-COVID-19-COLOMBIA-HOY-BOGOTA_tREnb0h.JPG&imgrefurl=https%3A%2F%2Fcanaltrece.com.co%2Fnoticias%2Fcuantos-casos-coronavirus-covid-19-colombia-bogota-hoy%2F&tbnid=W_F0ppXGMNeLRM&vet=12ahUKEwjZlfa68cXoAhU5STABHZC7AegQMygIegUIARDfAQ..i&docid=DuiHxsracvMwBM&w=683&h=1199&q=colombia%20coronavirus&client=firefox-b-d&ved=2ahUKEwjZlfa68cXoAhU5STABHZC7AegQMygIegUIARDfAQ "Infograma")
+Colombia 
+
+![Colombia](https://as01.epimg.net/colombia/imagenes/2020/03/27/tikitakas/1585309313_564721_1585338136_noticia_normal_recorte1.jpg "Infograma")
 
 
 ### Autor
