@@ -23,6 +23,10 @@ Colombia
 
 ![Colombia](https://as01.epimg.net/colombia/imagenes/2020/03/27/tikitakas/1585309313_564721_1585338136_noticia_normal_recorte1.jpg "Infograma")
 
+## Clase
+
+![Clase](captura.png "Clase")
+
 
 ### Autor
 
