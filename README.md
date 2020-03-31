@@ -25,7 +25,7 @@ Colombia
 
 ## Clase
 
-![Clase](captura.png "Clase")
+![Clase](Captura.png "Clase")
 
 
 ### Autor
