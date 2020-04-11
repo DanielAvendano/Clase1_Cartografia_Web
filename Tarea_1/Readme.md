@@ -1,7 +1,7 @@
 
 ##  1. Cuál es el problema a tratar?
 
- El problema a tratar es calcular cual localidad cuenta con mas canchas sinteticas, y la cercania de ciclorutas a estas canchas
+ El problema a tratar es, calcular cual localidad cuenta con mas parques que tengan canchas sinteticas, y la cercania de ciclorutas a estos parques
 
 ## 2. Por qué los datos geográficos ayudan a resolverlo?
 
@@ -11,7 +11,7 @@ Los datos geográficos ayudan a resolverlo, ya que brindan el componente espacia
 
 La solucion propuesta es:
 
-* Cargar las capas de localidades, canchas sinteticas, y ciclorutas.
+* Cargar las capas de localidades, canchas, y ciclorutas.
 
 * Realizar un Intersect para poder determinar que una cancha esta solo en una localidad la cual se llamara "Int_Loc_Canchas".
 
@@ -22,22 +22,22 @@ La solucion propuesta es:
 ## 4. Listado detallado de las fuentes de datos seleccionadas.
 
 * Capa de Localidades
-    Base de datos: GDR_V12.19.gdb
-    Dataset: Entidad_Territorial
-    Feature Class: Loca
-    Atributos que se tuvieron en cuenta: Nombre Localidad
-    Link de descarga: https://www.ideca.gov.co/recursos/mapas/mapa-de-referencia-para-bogota-dc
+    - Base de datos: GDR_V12.19.gdb
+    - Dataset: Entidad_Territorial
+    - Feature Class: Loca
+    - Atributos que se tuvieron en cuenta: Nombre Localidad
+    - Link de descarga: https://www.ideca.gov.co/recursos/mapas/mapa-de-referencia-para-bogota-dc
 
 * Capa de ciclorutas 
-    Base de datos: GDR_V12.19.gdb
-    Dataset: Transporte_Terrestre
-    Feature Class: RBic
-    Atributos que se tuvieron en cuenta:
-    Link de descarga: https://www.ideca.gov.co/recursos/mapas/mapa-de-referencia-para-bogota-dc
+    - Base de datos: GDR_V12.19.gdb
+    - Dataset: Transporte_Terrestre
+    - Feature Class: RBic
+    - Atributos que se tuvieron en cuenta:
+    - Link de descarga: https://www.ideca.gov.co/recursos/mapas/mapa-de-referencia-para-bogota-dc
 
 * Capa de Canchas Sinteticas 
-    Atributos que se tuvieron en cuenta:
-    Link de descarga: http://datosabiertos.bogota.gov.co/dataset/canchas-sinteticas
+    - Atributos que se tuvieron en cuenta:
+    - Link de descarga: http://datosabiertos.bogota.gov.co/dataset/canchas-sinteticas
 
 ## 5. Descripción detallada del procesamiento realizado a los datos 
     
