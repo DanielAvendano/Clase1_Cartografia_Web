@@ -13,21 +13,33 @@ La solucion propuesta es:
 
 * Cargar las capas de localidades, canchas sinteticas, y ciclorutas.
 
-* Realizar un filtro para determinar cual es la localidad con mas canchas sinteticas.
+* Realizar un Intersect para poder determinar que una cancha esta solo en una localidad la cual se llamara "Int_Loc_Canchas".
 
-* Crear un buffer de 100 metros a las canchas de esa localidad.
+* Crear un buffer de 100 metros a las canchas de esa localidad, el cual se llamara "Buff_100_Parques".
 
-* Hacer un Intersect para determinar si existen ciclorutas a menos de 100 mentros de las canchas.
+* Hacer un Intersect entre el buffer de las canchas (Buff_100_Parques) y la capa de ciclorutas, para determinar si existen ciclorutas a menos de 100 mentros de las canchas, esta capa se llamara "Int_Ciclo_Parques".
     
 ## 4. Listado detallado de las fuentes de datos seleccionadas.
 
-* Capa de Localidades: https://www.ideca.gov.co/recursos/mapas/mapa-de-referencia-para-bogota-dc
+* Capa de Localidades
+    Base de datos: GDR_V12.19.gdb
+    Dataset: Entidad_Territorial
+    Feature Class: Loca
+    Atributos que se tuvieron en cuenta: Nombre Localidad
+    Link de descarga: https://www.ideca.gov.co/recursos/mapas/mapa-de-referencia-para-bogota-dc
 
-* Capa de ciclorutas: https://www.ideca.gov.co/recursos/mapas/mapa-de-referencia-para-bogota-dc
+* Capa de ciclorutas 
+    Base de datos: GDR_V12.19.gdb
+    Dataset: Transporte_Terrestre
+    Feature Class: RBic
+    Atributos que se tuvieron en cuenta:
+    Link de descarga: https://www.ideca.gov.co/recursos/mapas/mapa-de-referencia-para-bogota-dc
 
-* Capa de Canchas Sinteticas: http://datosabiertos.bogota.gov.co/dataset/canchas-sinteticas
+* Capa de Canchas Sinteticas 
+    Atributos que se tuvieron en cuenta:
+    Link de descarga: http://datosabiertos.bogota.gov.co/dataset/canchas-sinteticas
 
-## 5. Descripción detallada del procesamiento no trivial realizado a los datos 
+## 5. Descripción detallada del procesamiento realizado a los datos 
     
 ## 6. Descripción detallada de la metodología utilizada para generar los mapas 
     
