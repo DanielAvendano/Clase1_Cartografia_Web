@@ -42,7 +42,7 @@ La solucion propuesta es:
 ## 5. Descripción detallada del procesamiento realizado a los datos 
 
 * Lo primero que debemos hacer es garantizar que todas las capas esten en el mismo sistema de coordenadas
-    - ![Imagen001](Tarea_1/Imagenes/Imagen001.PNG "Imagen001"), Imagen002, Imagen003
+    - ![Imagen001](Imagenes/Imagen001.PNG "Imagen001"), Imagen002, Imagen003
 * Como las capas estan en otro sistema de coordenadas debemos cambiarlo a Colombia Bogota Zone para trabajar todas en el mismo sistema y que podamos trabajar las medidas en metros
 * Se hace el siguiente procedimiento para las tres capas
     - Imagen004
