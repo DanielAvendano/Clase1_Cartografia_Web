@@ -13,9 +13,9 @@ La solucion propuesta es:
 
 * Cargar las capas de localidades, canchas, y ciclorutas.
 
-* Realizar un Intersect para poder determinar que una cancha esta solo en una localidad la cual se llamara "Int_Loc_Canchas".
+* Realizar un Join para poder determinar que el parque y el nombre de la localidad la cual se llamara "Join_Loc_Parques".
 
-* Crear un buffer de 100 metros a las canchas de esa localidad, el cual se llamara "Buff_100_Parques".
+* Crear un buffer de 100 metros a las parques de esa localidad, el cual se llamara "Buff_100_Parques".
 
 * Hacer un Intersect entre el buffer de las canchas (Buff_100_Parques) y la capa de ciclorutas, para determinar si existen ciclorutas a menos de 100 mentros de las canchas, esta capa se llamara "Int_Ciclo_Parques".
     
@@ -25,7 +25,7 @@ La solucion propuesta es:
     - Base de datos: GDR_V12.19.gdb
     - Dataset: Entidad_Territorial
     - Feature Class: Loca
-    - Atributos que se tuvieron en cuenta: Nombre Localidad
+    - Atributos que se tuvieron en cuenta: LocNombre, LocCodigo
     - Link de descarga: https://www.ideca.gov.co/recursos/mapas/mapa-de-referencia-para-bogota-dc
 
 * Capa de ciclorutas 
@@ -36,13 +36,58 @@ La solucion propuesta es:
     - Link de descarga: https://www.ideca.gov.co/recursos/mapas/mapa-de-referencia-para-bogota-dc
 
 * Capa de Canchas Sinteticas 
-    - Atributos que se tuvieron en cuenta:
+    - Atributos que se tuvieron en cuenta: Parque, Localidad
     - Link de descarga: http://datosabiertos.bogota.gov.co/dataset/canchas-sinteticas
 
 ## 5. Descripción detallada del procesamiento realizado a los datos 
-    
+
+* Lo primero que debemos hacer es garantizar que todas las capas esten en el mismo sistema de coordenadas
+- Imagen001, Imagen002, Imagen003
+* Como las capas estan en otro sistema de coordenadas debemos cambiarlo a Colombia Bogota Zone para trabajar todas en el mismo sistema y que podamos trabajar las medidas en metros
+* Se hace el siguiente procedimiento para las tres capas
+- Imagen004
+* Y debemos tener todas las capas de la siguiente manera
+- Imagen005a, Imagen005b, Imagen005c
+* Teniendo ya las tres capas en el mismo sistema de referencia se procede a hacer el Join
+- Imagen006
+* Y se obtiene el siguiente resultado
+- Imagen007
+* Para poder agrupar los datos debemos abrir la tabla de atributos y la herramienta Field Calculator, y se escribe la siguiente sentencia
+- Imagen008
+* Y de ahi obtenemos que la localidad con mas parques es suba con 9 parques
+- Imagen009
+* Se procede a seleccionar los parques de Suba
+- Imagen010
+* Y posteriormente el Buffer a los parques, Para esto necesitamos ir a la pestaña "Vector", la opcion "Geoprocessing Tools" y la herramienta "Buffer", se despliega una ventana y llenamos los campos de la manera
+- Imagen011
+* Y obtenemos el siguiente resultado
+- Imagen012
+* Como la capa de RBic tiene dominios debemos agregar esos dominios en qgis, de la siguiente manera
+- Imagen013, Imagen014
+* Ahora realizamos el intersect para ver que parques tienen una cicloruta a menos de 100 metros, para el intersect debemos ir a la pestaña "Vector", la opcion "Geoprocessing Tools" y la herramienta "Intersection...", se despliega una ventana y llenamos los campos de la siguiente manera
+- Imagen015
+* Y obtenemos el siguiente resultado
+- Imagen016
+
 ## 6. Descripción detallada de la metodología utilizada para generar los mapas 
-    
+
+* La metodologia utilizada para generar los mapas fue:
+* A la capa localidades un color solido con transparencia y mostrar los nombres de las localidades
+- Imagen017, Imagen018
+* La capa quedo de la siguiente manera
+- Imagen019
+* A la capa parques se le puso un color solido sin transparencia y tambien se muestran todos los nombres
+- Imagen020, Imagen021
+* La capa quedo de la siguiente manera
+- Imagen022
+* Para la capa RBic, se le asigno una simbologia categorizada ya que habian varias clases, y se le asigno una rampa en color gris
+- Imagen023
+* La capa resulto como se muestra a continuacion 
+- Imagen024
+
+
+
+
 ## 7. Descripción detallada del procedimiento técnico utilizado para generar los mapas.
 
 ## 8. Adicionar al repositorio github los archivos generados
