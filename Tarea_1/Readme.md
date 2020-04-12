@@ -83,21 +83,22 @@ La solucion propuesta es:
 * La capa quedo de la siguiente manera
     - ![Imagen019](Imagenes/Imagen019.PNG "Imagen019")
 * A la capa parques se le puso un color solido sin transparencia y tambien se muestran todos los nombres
-    - Imagen020, Imagen021
+    - ![Imagen020](Imagenes/Imagen020.PNG "Imagen020")
+    - ![Imagen021](Imagenes/Imagen021.PNG "Imagen021")
 * La capa quedo de la siguiente manera
-    - Imagen022
+    - ![Imagen022](Imagenes/Imagen022.PNG "Imagen022")
 * Para la capa RBic, se le asigno una simbologia categorizada ya que habian varias clases, y se le asigno una rampa en color gris
-    - Imagen023
+    - ![Imagen023](Imagenes/Imagen023.PNG "Imagen023")
 * La capa resulto como se muestra a continuacion 
-    - Imagen024
+    - ![Imagen024](Imagenes/Imagen024.PNG "Imagen024")
 * Para la Capa de Buffer se le asigno una simbologia de poligono sin relleno y linea punteada al rededor
-    - Imagen025
+    - ![Imagen025](Imagenes/Imagen025.PNG "Imagen025")
 * se muestra el resultado en la siguiente imagen
-    - Imagen026
+    - ![Imagen026](Imagenes/Imagen026.PNG "Imagen026")
 * Para la capa Intersect, se le asigno una simbologia categorizada ya que habian dos clases, y se le asignaron colores que destacaran
-    - Imagen027
+    - ![Imagen027](Imagenes/Imagen027.PNG "Imagen027")
 * Se muestra el resultado a continuacion
-    - Imagen028
+    - ![Imagen028](Imagenes/Imagen028.PNG "Imagen028")
 
 
 
