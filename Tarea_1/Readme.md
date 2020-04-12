@@ -32,7 +32,7 @@ La solucion propuesta es:
     - Base de datos: GDR_V12.19.gdb
     - Dataset: Transporte_Terrestre
     - Feature Class: RBic
-    - Atributos que se tuvieron en cuenta:
+    - Atributos que se tuvieron en cuenta: RBLocaliz
     - Link de descarga: https://www.ideca.gov.co/recursos/mapas/mapa-de-referencia-para-bogota-dc
 
 * Capa de Canchas Sinteticas 
@@ -42,63 +42,63 @@ La solucion propuesta es:
 ## 5. Descripción detallada del procesamiento realizado a los datos 
 
 * Lo primero que debemos hacer es garantizar que todas las capas esten en el mismo sistema de coordenadas
-    - ![Imagen001](Imagenes/Imagen001.PNG "Imagen001")
-    - ![Imagen002](Imagenes/Imagen002.PNG "Imagen002")
-    - ![Imagen003](Imagenes/Imagen003.PNG "Imagen003")
+     ![Imagen001](Imagenes/Imagen001.PNG "Imagen001")
+     ![Imagen002](Imagenes/Imagen002.PNG "Imagen002")
+     ![Imagen003](Imagenes/Imagen003.PNG "Imagen003")
 * Como las capas estan en otro sistema de coordenadas debemos cambiarlo a Colombia Bogota Zone para trabajar todas en el mismo sistema y que podamos trabajar las medidas en metros
 * Se hace el siguiente procedimiento para las tres capas
-    - ![Imagen004](Imagenes/Imagen004.PNG "Imagen004")
+     ![Imagen004](Imagenes/Imagen004.PNG "Imagen004")
 * Y debemos tener todas las capas de la siguiente manera
-    - ![Imagen005a](Imagenes/Imagen005a.PNG "Imagen005a")
-    - ![Imagen005b](Imagenes/Imagen005b.PNG "Imagen005b")
-    - ![Imagen005c](Imagenes/Imagen005c.PNG "Imagen005c")
+     ![Imagen005a](Imagenes/Imagen005a.PNG "Imagen005a")
+     ![Imagen005b](Imagenes/Imagen005b.PNG "Imagen005b")
+     ![Imagen005c](Imagenes/Imagen005c.PNG "Imagen005c")
 * Teniendo ya las tres capas en el mismo sistema de referencia se procede a hacer el Join
-    - ![Imagen006](Imagenes/Imagen006.PNG "Imagen006")
+     ![Imagen006](Imagenes/Imagen006.PNG "Imagen006")
 * Y se obtiene el siguiente resultado
-    - ![Imagen007](Imagenes/Imagen007.PNG "Imagen007")
+     ![Imagen007](Imagenes/Imagen007.PNG "Imagen007")
 * Para poder agrupar los datos debemos abrir la tabla de atributos y la herramienta Field Calculator, y se escribe la siguiente sentencia
-    - ![Imagen008](Imagenes/Imagen008.PNG "Imagen008")
+     ![Imagen008](Imagenes/Imagen008.PNG "Imagen008")
 * Y de ahi obtenemos que la localidad con mas parques es suba con 9 parques
-    - ![Imagen009](Imagenes/Imagen009.PNG "Imagen009")
+     ![Imagen009](Imagenes/Imagen009.PNG "Imagen009")
 * Se procede a seleccionar los parques de Suba
-    - ![Imagen010](Imagenes/Imagen010.PNG "Imagen010")
+     ![Imagen010](Imagenes/Imagen010.PNG "Imagen010")
 * Y posteriormente el Buffer a los parques, Para esto necesitamos ir a la pestaña "Vector", la opcion "Geoprocessing Tools" y la herramienta "Buffer", se despliega una ventana y llenamos los campos de la manera
-    - ![Imagen011](Imagenes/Imagen011.PNG "Imagen011")
+     ![Imagen011](Imagenes/Imagen011.PNG "Imagen011")
 * Y obtenemos el siguiente resultado
-    - ![Imagen012](Imagenes/Imagen012.PNG "Imagen012")
+     ![Imagen012](Imagenes/Imagen012.PNG "Imagen012")
 * Como la capa de RBic tiene dominios debemos agregar esos dominios en qgis, de la siguiente manera
-    - ![Imagen013](Imagenes/Imagen013.PNG "Imagen013")
-    - ![Imagen014](Imagenes/Imagen014.PNG "Imagen014")
+     ![Imagen013](Imagenes/Imagen013.PNG "Imagen013")
+     ![Imagen014](Imagenes/Imagen014.PNG "Imagen014")
 * Ahora realizamos el intersect para ver que parques tienen una cicloruta a menos de 100 metros, para el intersect debemos ir a la pestaña "Vector", la opcion "Geoprocessing Tools" y la herramienta "Intersection...", se despliega una ventana y llenamos los campos de la siguiente manera
-    - ![Imagen015](Imagenes/Imagen015.PNG "Imagen015")
+     ![Imagen015](Imagenes/Imagen015.PNG "Imagen015")
 * Y obtenemos el siguiente resultado
-    - ![Imagen016](Imagenes/Imagen016.PNG "Imagen016")
+     ![Imagen016](Imagenes/Imagen016.PNG "Imagen016")
 
 ## 6. Descripción detallada de la metodología utilizada para generar los mapas 
 
 * La metodologia utilizada para generar los mapas fue:
 * A la capa localidades un color solido con transparencia y mostrar los nombres de las localidades
-    - ![Imagen017](Imagenes/Imagen017.PNG "Imagen017")
-    - ![Imagen018](Imagenes/Imagen018.PNG "Imagen018")
+     ![Imagen017](Imagenes/Imagen017.PNG "Imagen017")
+     ![Imagen018](Imagenes/Imagen018.PNG "Imagen018")
 * La capa quedo de la siguiente manera
-    - ![Imagen019](Imagenes/Imagen019.PNG "Imagen019")
+     ![Imagen019](Imagenes/Imagen019.PNG "Imagen019")
 * A la capa parques se le puso un color solido sin transparencia y tambien se muestran todos los nombres
-    - ![Imagen020](Imagenes/Imagen020.PNG "Imagen020")
-    - ![Imagen021](Imagenes/Imagen021.PNG "Imagen021")
+     ![Imagen020](Imagenes/Imagen020.PNG "Imagen020")
+     ![Imagen021](Imagenes/Imagen021.PNG "Imagen021")
 * La capa quedo de la siguiente manera
-    - ![Imagen022](Imagenes/Imagen022.PNG "Imagen022")
+     ![Imagen022](Imagenes/Imagen022.PNG "Imagen022")
 * Para la capa RBic, se le asigno una simbologia categorizada ya que habian varias clases, y se le asigno una rampa en color gris
-    - ![Imagen023](Imagenes/Imagen023.PNG "Imagen023")
+     ![Imagen023](Imagenes/Imagen023.PNG "Imagen023")
 * La capa resulto como se muestra a continuacion 
-    - ![Imagen024](Imagenes/Imagen024.PNG "Imagen024")
+     ![Imagen024](Imagenes/Imagen024.PNG "Imagen024")
 * Para la Capa de Buffer se le asigno una simbologia de poligono sin relleno y linea punteada al rededor
-    - ![Imagen025](Imagenes/Imagen025.PNG "Imagen025")
+     ![Imagen025](Imagenes/Imagen025.PNG "Imagen025")
 * se muestra el resultado en la siguiente imagen
-    - ![Imagen026](Imagenes/Imagen026.PNG "Imagen026")
+     ![Imagen026](Imagenes/Imagen026.PNG "Imagen026")
 * Para la capa Intersect, se le asigno una simbologia categorizada ya que habian dos clases, y se le asignaron colores que destacaran
-    - ![Imagen027](Imagenes/Imagen027.PNG "Imagen027")
+     ![Imagen027](Imagenes/Imagen027.PNG "Imagen027")
 * Se muestra el resultado a continuacion
-    - ![Imagen028](Imagenes/Imagen028.PNG "Imagen028")
+     ![Imagen028](Imagenes/Imagen028.PNG "Imagen028")
 
 
 
