@@ -107,9 +107,22 @@ La solucion propuesta es:
     ![Imagen029](Imagenes/Imagen029.PNG "Imagen029")
 * Posteriormente se despliega la pestaña "Web" , se escoge la opcion "qgis2web" y la herramienta "Create web map"
       ![Imagen030](Imagenes/Imagen030.PNG "Imagen030")
-
-## 8. Adicionar al repositorio github los archivos generados
+* Se despliega una ventana donde se deben confgurar las propiedades del mapa web
+      ![Imagen031](Imagenes/Imagen031.PNG "Imagen031")
+* Cuando ya se han ajustado todas las propiedades, se da click en el boton "Exportar", y debe salir una ventana con el proceso Exitoso
+      ![Imagen032](Imagenes/Imagen032.PNG "Imagen032")
 
 ## 9. Urls de los mapas publicados en la web
+
+* 
+* 
     
 ## 10. Conclusiones Ventajas / desventajas / dificultades encontradas durante el desarrollo del ejercicio
+
+* Conclusiones: 7 de los 9 parques del caso de estudio, que fue la localidad de Suba, no cuentan con ciclorrutas a menos de 100 metros.
+
+* Ventajas: las ventajas son que cualquier problema con componente espacial gracias a estas herramientas da muchas mas posibilidades para la representación grafica, y que muchas personas puedan acceder a el analisis de la informacion.
+
+* Desventajas: como desventaja a nivel personal, se me dificulto mucho hacer ciertos procesos en qgis, ya que vengo a estar trabajando con Arcgis, entonces lleva un poco mas de tiempo realizar procesos especificos en qgis que quizas en Arcgis son mas intuitivos, por decir algo la herramienta Summarized de la tabla de atributos.
+
+* Dificultades: Muchas herramientas de qgis solo se puede acceder a ellas instalando el plugin adecuado

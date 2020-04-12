@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/leaflet-measure.css">
+        <style>
+        #map {
+            width: 1147px;
+            height: 579px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/leaflet-measure.js"></script>
+        <script src="data/Localidad_3116_0.js"></script>
+        <script src="data/Parques_3116_1.js"></script>
+        <script src="data/RBic_3116_2.js"></script>
+        <script src="data/Buffered_3.js"></script>
+        <script src="data/Intersection_4.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[4.7215721299421105,-74.1157115555862],[4.758911000288523,-74.04161622361602]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        var measureControl = new L.Control.Measure({
+            position: 'topleft',
+            primaryLengthUnit: 'meters',
+            secondaryLengthUnit: 'kilometers',
+            primaryAreaUnit: 'sqmeters',
+            secondaryAreaUnit: 'hectares'
+        });
+        measureControl.addTo(map);
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .innerHTML = '';
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .className += ' fas fa-ruler';
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        function pop_Localidad_3116_0(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['OBJECTID'] !== null ? autolinker.link(feature.properties['OBJECTID'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['LocNombre'] !== null ? autolinker.link(feature.properties['LocNombre'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['LocAAdmini'] !== null ? autolinker.link(feature.properties['LocAAdmini'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['LocArea'] !== null ? autolinker.link(feature.properties['LocArea'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['LocCodigo'] !== null ? autolinker.link(feature.properties['LocCodigo'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['SHAPE_Leng'] !== null ? autolinker.link(feature.properties['SHAPE_Leng'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['SHAPE_Area'] !== null ? autolinker.link(feature.properties['SHAPE_Area'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_Localidad_3116_0_0() {
+            return {
+                pane: 'pane_Localidad_3116_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(164,113,88,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_Localidad_3116_0');
+        map.getPane('pane_Localidad_3116_0').style.zIndex = 400;
+        map.getPane('pane_Localidad_3116_0').style['mix-blend-mode'] = 'normal';
+        var layer_Localidad_3116_0 = new L.geoJson(json_Localidad_3116_0, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Localidad_3116_0',
+            layerName: 'layer_Localidad_3116_0',
+            pane: 'pane_Localidad_3116_0',
+            onEachFeature: pop_Localidad_3116_0,
+            style: style_Localidad_3116_0_0,
+        });
+        bounds_group.addLayer(layer_Localidad_3116_0);
+        map.addLayer(layer_Localidad_3116_0);
+        function pop_Parques_3116_1(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['SDPIPARQUE'] !== null ? autolinker.link(feature.properties['SDPIPARQUE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>PARQUE</strong><br />' + (feature.properties['PARQUE'] !== null ? autolinker.link(feature.properties['PARQUE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['LOCALIDAD'] !== null ? autolinker.link(feature.properties['LOCALIDAD'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>DIRECCIÓN</strong><br />' + (feature.properties['DIRECCIÓN'] !== null ? autolinker.link(feature.properties['DIRECCIÓN'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['TIPO_PARQU'] !== null ? autolinker.link(feature.properties['TIPO_PARQU'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['SHAPE_Leng'] !== null ? autolinker.link(feature.properties['SHAPE_Leng'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['SHAPE_Area'] !== null ? autolinker.link(feature.properties['SHAPE_Area'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_Parques_3116_1_0() {
+            return {
+                pane: 'pane_Parques_3116_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(229,182,54,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_Parques_3116_1');
+        map.getPane('pane_Parques_3116_1').style.zIndex = 401;
+        map.getPane('pane_Parques_3116_1').style['mix-blend-mode'] = 'normal';
+        var layer_Parques_3116_1 = new L.geoJson(json_Parques_3116_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Parques_3116_1',
+            layerName: 'layer_Parques_3116_1',
+            pane: 'pane_Parques_3116_1',
+            onEachFeature: pop_Parques_3116_1,
+            style: style_Parques_3116_1_0,
+        });
+        bounds_group.addLayer(layer_Parques_3116_1);
+        map.addLayer(layer_Parques_3116_1);
+        function pop_RBic_3116_2(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['OBJECTID'] !== null ? autolinker.link(feature.properties['OBJECTID'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['RBiCodigo'] !== null ? autolinker.link(feature.properties['RBiCodigo'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['RBiClase'] !== null ? autolinker.link(feature.properties['RBiClase'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['RBiSentido'] !== null ? autolinker.link(feature.properties['RBiSentido'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['RBiTSuperf'] !== null ? autolinker.link(feature.properties['RBiTSuperf'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['RBiCIVial'] !== null ? autolinker.link(feature.properties['RBiCIVial'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['RBiLocaliz'] !== null ? autolinker.link(feature.properties['RBiLocaliz'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['SHAPE_Leng'] !== null ? autolinker.link(feature.properties['SHAPE_Leng'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['RBiLoc'] !== null ? autolinker.link(feature.properties['RBiLoc'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_RBic_3116_2_0(feature) {
+            switch(String(feature.properties['RBiLoc'])) {
+                case 'Separador':
+                    return {
+                pane: 'pane_RBic_3116_2',
+                opacity: 1,
+                color: 'rgba(250,250,250,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+                    break;
+                case 'Puente':
+                    return {
+                pane: 'pane_RBic_3116_2',
+                opacity: 1,
+                color: 'rgba(201,201,201,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+                    break;
+                case 'Parque':
+                    return {
+                pane: 'pane_RBic_3116_2',
+                opacity: 1,
+                color: 'rgba(152,152,152,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+                    break;
+                case 'Ciclo Túnel':
+                    return {
+                pane: 'pane_RBic_3116_2',
+                opacity: 1,
+                color: 'rgba(103,103,103,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+                    break;
+                case 'Calzada':
+                    return {
+                pane: 'pane_RBic_3116_2',
+                opacity: 1,
+                color: 'rgba(54,54,54,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+                    break;
+                case 'Andén':
+                    return {
+                pane: 'pane_RBic_3116_2',
+                opacity: 1,
+                color: 'rgba(5,5,5,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_RBic_3116_2');
+        map.getPane('pane_RBic_3116_2').style.zIndex = 402;
+        map.getPane('pane_RBic_3116_2').style['mix-blend-mode'] = 'normal';
+        var layer_RBic_3116_2 = new L.geoJson(json_RBic_3116_2, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_RBic_3116_2',
+            layerName: 'layer_RBic_3116_2',
+            pane: 'pane_RBic_3116_2',
+            onEachFeature: pop_RBic_3116_2,
+            style: style_RBic_3116_2_0,
+        });
+        bounds_group.addLayer(layer_RBic_3116_2);
+        map.addLayer(layer_RBic_3116_2);
+        function pop_Buffered_3(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['SDPIPARQUE'] !== null ? autolinker.link(feature.properties['SDPIPARQUE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>PARQUE</strong><br />' + (feature.properties['PARQUE'] !== null ? autolinker.link(feature.properties['PARQUE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['LOCALIDAD'] !== null ? autolinker.link(feature.properties['LOCALIDAD'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>DIRECCI�N</strong><br />' + (feature.properties['DIRECCI�N'] !== null ? autolinker.link(feature.properties['DIRECCI�N'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['TIPO_PARQU'] !== null ? autolinker.link(feature.properties['TIPO_PARQU'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['SHAPE_Leng'] !== null ? autolinker.link(feature.properties['SHAPE_Leng'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['SHAPE_Area'] !== null ? autolinker.link(feature.properties['SHAPE_Area'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Localidad_'] !== null ? autolinker.link(feature.properties['Localidad_'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Localida_1'] !== null ? autolinker.link(feature.properties['Localida_1'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Localida_2'] !== null ? autolinker.link(feature.properties['Localida_2'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Localida_3'] !== null ? autolinker.link(feature.properties['Localida_3'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Localida_4'] !== null ? autolinker.link(feature.properties['Localida_4'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Localida_5'] !== null ? autolinker.link(feature.properties['Localida_5'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['COUNT'] !== null ? autolinker.link(feature.properties['COUNT'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_Buffered_3_0() {
+            return {
+                pane: 'pane_Buffered_3',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '10,5',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+        }
+        map.createPane('pane_Buffered_3');
+        map.getPane('pane_Buffered_3').style.zIndex = 403;
+        map.getPane('pane_Buffered_3').style['mix-blend-mode'] = 'normal';
+        var layer_Buffered_3 = new L.geoJson(json_Buffered_3, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Buffered_3',
+            layerName: 'layer_Buffered_3',
+            pane: 'pane_Buffered_3',
+            onEachFeature: pop_Buffered_3,
+            style: style_Buffered_3_0,
+        });
+        bounds_group.addLayer(layer_Buffered_3);
+        map.addLayer(layer_Buffered_3);
+        function pop_Intersection_4(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['RBiLoc'] !== null ? autolinker.link(feature.properties['RBiLoc'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['PARQUE'] !== null ? autolinker.link(feature.properties['PARQUE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['DIRECCI?N'] !== null ? autolinker.link(feature.properties['DIRECCI?N'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_Intersection_4_0(feature) {
+            switch(String(feature.properties['RBiLoc'])) {
+                case 'And?n':
+                    return {
+                pane: 'pane_Intersection_4',
+                opacity: 1,
+                color: 'rgba(248,88,7,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 2.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Parque':
+                    return {
+                pane: 'pane_Intersection_4',
+                opacity: 1,
+                color: 'rgba(103,0,13,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 2.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_Intersection_4');
+        map.getPane('pane_Intersection_4').style.zIndex = 404;
+        map.getPane('pane_Intersection_4').style['mix-blend-mode'] = 'normal';
+        var layer_Intersection_4 = new L.geoJson(json_Intersection_4, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Intersection_4',
+            layerName: 'layer_Intersection_4',
+            pane: 'pane_Intersection_4',
+            onEachFeature: pop_Intersection_4,
+            style: style_Intersection_4_0,
+        });
+        bounds_group.addLayer(layer_Intersection_4);
+        map.addLayer(layer_Intersection_4);
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'Intersection<br /><table><tr><td style="text-align: center;"><img src="legend/Intersection_4_Andn0.png" /></td><td>And?n</td></tr><tr><td style="text-align: center;"><img src="legend/Intersection_4_Parque1.png" /></td><td>Parque</td></tr></table>': layer_Intersection_4,'<img src="legend/Buffered_3.png" /> Buffered': layer_Buffered_3,'RBic_3116<br /><table><tr><td style="text-align: center;"><img src="legend/RBic_3116_2_Separador0.png" /></td><td>Separador</td></tr><tr><td style="text-align: center;"><img src="legend/RBic_3116_2_Puente1.png" /></td><td>Puente</td></tr><tr><td style="text-align: center;"><img src="legend/RBic_3116_2_Parque2.png" /></td><td>Parque</td></tr><tr><td style="text-align: center;"><img src="legend/RBic_3116_2_CicloTúnel3.png" /></td><td>Ciclo Túnel</td></tr><tr><td style="text-align: center;"><img src="legend/RBic_3116_2_Calzada4.png" /></td><td>Calzada</td></tr><tr><td style="text-align: center;"><img src="legend/RBic_3116_2_Andén5.png" /></td><td>Andén</td></tr></table>': layer_RBic_3116_2,'<img src="legend/Parques_3116_1.png" /> Parques_3116': layer_Parques_3116_1,'<img src="legend/Localidad_3116_0.png" /> Localidad_3116': layer_Localidad_3116_0,}).addTo(map);
+        setBounds();
+        var i = 0;
+        layer_Localidad_3116_0.eachLayer(function(layer) {
+            var context = {
+                feature: layer.feature,
+                variables: {}
+            };
+            layer.bindTooltip((layer.feature.properties['LocNombre'] !== null?String('<div style="color: #000000; font-size: 9pt; font-family: \'MS Shell Dlg 2\', sans-serif;">' + layer.feature.properties['LocNombre']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Localidad_3116_0'});
+            labels.push(layer);
+            totalMarkers += 1;
+              layer.added = true;
+              addLabel(layer, i);
+              i++;
+        });
+        var i = 0;
+        layer_Parques_3116_1.eachLayer(function(layer) {
+            var context = {
+                feature: layer.feature,
+                variables: {}
+            };
+            layer.bindTooltip((layer.feature.properties['PARQUE'] !== null?String('<div style="color: #000000; font-size: 9pt; font-family: \'MS Shell Dlg 2\', sans-serif;">' + layer.feature.properties['PARQUE']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Parques_3116_1'});
+            labels.push(layer);
+            totalMarkers += 1;
+              layer.added = true;
+              addLabel(layer, i);
+              i++;
+        });
+        resetLabels([layer_Localidad_3116_0,layer_Parques_3116_1]);
+        map.on("zoomend", function(){
+            resetLabels([layer_Localidad_3116_0,layer_Parques_3116_1]);
+        });
+        map.on("layeradd", function(){
+            resetLabels([layer_Localidad_3116_0,layer_Parques_3116_1]);
+        });
+        map.on("layerremove", function(){
+            resetLabels([layer_Localidad_3116_0,layer_Parques_3116_1]);
+        });
+        </script>
+    </body>
+</html>
