@@ -101,8 +101,12 @@ La solucion propuesta es:
      ![Imagen028](Imagenes/Imagen028.PNG "Imagen028")
 
 
-
 ## 7. Descripción detallada del procedimiento técnico utilizado para generar los mapas.
+
+* Para generar los mapas se debe contar con el Plugin de "Qgis2web"
+    ![Imagen029](Imagenes/Imagen029.PNG "Imagen029")
+* Posteriormente se despliega la pestaña "Web" , se escoge la opcion "qgis2web" y la herramienta "Create web map"
+      ![Imagen030](Imagenes/Imagen030.PNG "Imagen030")
 
 ## 8. Adicionar al repositorio github los archivos generados
 
