@@ -110,7 +110,6 @@ La solucion propuesta es:
 * Se despliega una ventana donde se deben confgurar las propiedades del mapa web
       ![Imagen031](Imagenes/Imagen031.PNG "Imagen031")
 * Cuando ya se han ajustado todas las propiedades, se da click en el boton "Exportar", y debe salir una ventana con el proceso Exitoso
-
       ![Imagen032](Imagenes/Imagen032.PNG "Imagen032")
 
 ## 9. Urls de los mapas publicados en la web
