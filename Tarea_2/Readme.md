@@ -91,10 +91,21 @@ imagen029
 * para cargar el estilo al Geoserver, se da click en el boton estilos, y en el boton agregar un nuevo estilo
 * se introducen los datos de las siguiente manera
 imagen030
+* se realizo para la capa "da_localidad_san_cristobal"
 * se introduce el codigo 
 -- codigo sld
 * previsualizacion de la leyenda
 imagen031
+* previsualizacion de la capa
+iamgen031a
+* se realizo para la capa "da_paraderos_sitp_san_cristobal"
+* codigo
+-- codigo sld
+* previsualizacion de la leyenda
+imagen032
+* previsualizacion de la capa
+iamgen032a
+
 
 ## 5. Capa simbología CSS
 
