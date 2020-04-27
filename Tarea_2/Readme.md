@@ -79,17 +79,22 @@ imagen026
 * ese proceso se realiza con todas las capas que se requieren publicar
 * se hace la verificacion de que las capas esten publicadas
 imagen027
-* Posteriormente se procede a crear el grupo de capas con el boton "Grupos de Capas" y se llenan los datos de la siguiente manera
-imagen028
-* se cargan las capas de la siguiente manera y por el momento se les asigna la simbologia por defecto.
-imagen029
+
+
 ## 4. Capa simbología SLD
 
 * Para crear la simbologia en formato SLD se debe tener la capa desplegada en QGIS, y se le da click derecho y la opcion "Properties..."
 * se ajusta la simbologia de la manera adecuada
-imagen098
+imagen028
 * se presiona el boton "Style" y se despliega una barra de opciones se debe seleccionar "Save Style..." 
-imagen099
+imagen029
+* para cargar el estilo al Geoserver, se da click en el boton estilos, y en el boton agregar un nuevo estilo
+* se introducen los datos de las siguiente manera
+imagen030
+* se introduce el codigo 
+-- codigo sld
+* previsualizacion de la leyenda
+imagen031
 
 ## 5. Capa simbología CSS
 
@@ -98,6 +103,9 @@ imagen099
 ## 7. grupo de capas 
 
 #### Layer group
+* Para crear el grupo de capas con el boton "Grupos de Capas" y se llenan los datos de la siguiente manera
+
+* se cargan las capas de la siguiente manera y por el momento se les asigna la simbologia por defecto.
 
 #### Previsualización
 
