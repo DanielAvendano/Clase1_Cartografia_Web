@@ -70,7 +70,19 @@ imagen020
 imagen021
 - capa da_localidad_san_cristobal
 imagen022
-
+* en la ruta del geoserver se da click en el boton "Capas" ubicado en Datos y se le da la opcion de agragar nuevo recurso.
+imagen023, imagen024
+* se selecciona la base de datos 
+imagen025
+* y se escoje la capa que se va a publicar y se le ajustan los datos de la siguiente manera
+imagen026
+* ese proceso se realiza con todas las capas que se requieren publicar
+* se hace la verificacion de que las capas esten publicadas
+imagen027
+* Posteriormente se procede a crear el grupo de capas con el boton "Grupos de Capas" y se llenan los datos de la siguiente manera
+imagen028
+* se cargan las capas de la siguiente manera y por el momento se les asigna la simbologia por defecto.
+imagen029
 ## 4. Capa simbología SLD
 
 * Para crear la simbologia en formato SLD se debe tener la capa desplegada en QGIS, y se le da click derecho y la opcion "Properties..."
@@ -78,6 +90,7 @@ imagen022
 imagen098
 * se presiona el boton "Style" y se despliega una barra de opciones se debe seleccionar "Save Style..." 
 imagen099
+
 ## 5. Capa simbología CSS
 
 ## 6. Capa simbologia YSLD
