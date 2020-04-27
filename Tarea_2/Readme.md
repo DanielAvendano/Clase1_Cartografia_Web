@@ -119,6 +119,11 @@ iamgen033a
 imagen034
 * se modifica el codigo para que quede de la siguiente manera
 image035
+* previsualizacion de la leyenda
+imagen036
+* previsualizacion de la capa
+iamgen036a
+
 
 ## 6. Capa simbologia YSLD
 
