@@ -105,9 +105,20 @@ iamgen031a
 imagen032
 * previsualizacion de la capa
 iamgen032a
-
+* se realizo para la capa "da_buffer_200_paraderos"
+* se introduce el codigo 
+-- codigo sld
+* previsualizacion de la leyenda
+imagen033
+* previsualizacion de la capa
+iamgen033a
 
 ## 5. Capa simbología CSS
+
+* Para crear la simbologia en CSS debemos acceder a la pagina de geoserver y en la pestaña estilos agregar uno nuevo, se llenan los campos como acontinuacion y se escoje el formato "CSS" y en "Style Content" se selecciona polygon y generate para que genere el codigo
+imagen034
+* se modifica el codigo para que quede de la siguiente manera
+image035
 
 ## 6. Capa simbologia YSLD
 
