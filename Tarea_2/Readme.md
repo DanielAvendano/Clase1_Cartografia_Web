@@ -363,6 +363,12 @@ symbolizers:
 
 http://34.83.176.208:18080/geoserver/clase_2020_01/wms?service=WMS&version=1.1.0&request=GetMap&layers=clase_2020_01%3Ada_zona_de_influencia_paraderos_sitp&bbox=996471.4130562533%2C990282.0057598756%2C1005432.3568950287%2C999399.4895897815&width=754&height=768&srs=EPSG%3A3116&format=application/openlayers
 
+## Bonus Mapbox, creacion de un mapa base 
+
+* Se entra a la pagina de 
+![Mapbox](https://studio.mapbox.com/)
+
+
 ## 8. Conclusiones
 
 * Video Loom
