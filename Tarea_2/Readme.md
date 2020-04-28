@@ -1,7 +1,7 @@
 ## 1. Definicion del problema
 
 * El problema a solucionar es encontrar las manzanas en la localidad de San Cristobal las cuales se encuentran a mas de 200 metros de un paradero del SITP, y con esto garantizar que todas las manzanas tengan un paradero a por lo menos 200 metros lo que le tomaria a una persona promedio llegar caminando al paradero entre 2 y 3 minutos teniendo en cuenta que la velocidad de una persona adulta al caminar son 83 metros por minuto.
-
+* Los datos geográficos ayudan a resolverlo, ya que brindan el componente espacial lo cual nos permite vincular varias capas y asi poder obtener una solución a nuestro problema
 * Se propone:
 - Extraer los datos de la capa localidades para tener solamente la localidad de San Cristobal
 - Extraer los paraderos del sitp que se encuentran en la localidad de San Cristobal
@@ -10,12 +10,26 @@
 - Realizar una consulta por localizacion para determinar cuales manzanas no tienen cobertura de los paraderos del SITP en San Cristobal
 
 ## 2. Fuente de datos
+* Capa de Localidades
+    - Base de datos: GDR_V12.19.gdb
+    - Dataset: Entidad_Territorial
+    - Feature Class: Loca
+    - Atributos que se tuvieron en cuenta: LocNombre, LocCodigo
+    - Link de descarga: https://www.ideca.gov.co/recursos/mapas/mapa-de-referencia-para-bogota-dc
 
-* Localidades
+* * Manzanas
+    - Base de datos: GDR_V12.19.gdb
+    - Dataset: Area Catastral
+    - Feature Class: Manz
+    - Atributos que se tuvieron en cuenta: mancodigo, seccodigo
+    - Link de descarga: https://www.ideca.gov.co/recursos/mapas/mapa-de-referencia-para-bogota-dc
 
-* Manzanas
-
-* Paraderos del SITP
+* * Paraderos del SITP
+    - Base de datos: GDR_V12.19.gdb
+    - Dataset: Transporte_terrestre
+    - Feature Class: Psitp
+    - Atributos que se tuvieron en cuenta: localidad
+    - Link de descarga: https://www.ideca.gov.co/recursos/mapas/mapa-de-referencia-para-bogota-dc
 
 ## 3. Procesamiento de datos
 
@@ -363,7 +377,20 @@ symbolizers:
 
 http://34.83.176.208:18080/geoserver/clase_2020_01/wms?service=WMS&version=1.1.0&request=GetMap&layers=clase_2020_01%3Ada_zona_de_influencia_paraderos_sitp&bbox=996471.4130562533%2C990282.0057598756%2C1005432.3568950287%2C999399.4895897815&width=754&height=768&srs=EPSG%3A3116&format=application/openlayers
 
+##### Publicacion en GITHUB pages desde QGIS
 
+* Para generar los mapas se debe contar con el Plugin de "Qgis2web"
+        ![imagen044](Imagenes/imagen044.PNG "imagen044")
+* Posteriormente se despliega la pestaña "Web" , se escoge la opcion "qgis2web" y la herramienta "Create web map"
+      ![imagen045](Imagenes/imagen045.PNG "imagen045")
+* Se despliega una ventana donde se deben confgurar las propiedades del mapa web
+      ![imagen046](Imagenes/imagen046.PNG "imagen046")
+* Cuando ya se han ajustado todas las propiedades, se da click en el boton "Exportar", y debe salir una ventana con el proceso Exitoso
+      ![imagen047](Imagenes/imagen043.PNG "imagen047")
+
+* Url 
+https://danielavendano.github.io/Clase1_Cartografia_Web/Tarea_2/Mapa/Mapa/index.html
+    
 
 ## 8. Conclusiones
 
