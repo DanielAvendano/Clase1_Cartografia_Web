@@ -348,10 +348,21 @@ symbolizers:
 #### Layer group
 * Para crear el grupo de capas con el boton "Grupos de Capas" y se llenan los datos de la siguiente manera
 
-* se cargan las capas de la siguiente manera y se asigna la simbologia por defecto.
+![imagen041](Imagenes/imagen041.PNG "imagen041")
+* se cargan las capas de la siguiente manera y se asigna la simbologia por defecto. 
+
+![imagen042](Imagenes/imagen042.PNG "imagen042")
 
 #### Previsualización
 
-## 8. Concluciones
+* A continuacion se muestra una previsualizacion 
+
+![imagen043](Imagenes/imagen043.PNG "imagen043")
+
+* y el link para acceder al mapa
+
+http://34.83.176.208:18080/geoserver/clase_2020_01/wms?service=WMS&version=1.1.0&request=GetMap&layers=clase_2020_01%3Ada_zona_de_influencia_paraderos_sitp&bbox=996471.4130562533%2C990282.0057598756%2C1005432.3568950287%2C999399.4895897815&width=754&height=768&srs=EPSG%3A3116&format=application/openlayers
+
+## 8. Conclusiones
 
 * Video Loom
