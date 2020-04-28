@@ -82,13 +82,13 @@ Para procesar los datos se va a usar la herramienta postgres, como el ejercicio 
 * se procedio a calcular cuales manzanas se encontraban fuera de la cobertura del area de influencia.
 
 ![imagen014](Imagenes/imagen014.PNG "imagen014")
-* y se muestran a continuacion en color rojo
+* y se muestran a continuacion en color rojo, el resultado son 382 manzanas en la localidad sin cobertura de paraderos del SITP
 
 ![imagen014a](Imagenes/imagen014a.PNG "imagen014a")
 * tambien se calculo cuales manzanas no se suplia totalmente la cobertura del area de influencia de 200 metros.
 
 ![imagen015](Imagenes/imagen015.PNG "imagen015")
-* y se muestran a continuacion en color amarillo
+* y se muestran a continuacion en color amarillo, el resultado son 389 manzanas en la localidad sin cobertura de paraderos del SITP
 
 ![imagen015a](Imagenes/imagen015a.PNG "imagen015a")
 
