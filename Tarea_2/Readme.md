@@ -3,11 +3,11 @@
 * El problema a solucionar es encontrar las manzanas en la localidad de San Cristobal las cuales se encuentran a mas de 200 metros de un paradero del SITP, y con esto garantizar que todas las manzanas tengan un paradero a por lo menos 200 metros lo que le tomaria a una persona promedio llegar caminando al paradero entre 2 y 3 minutos teniendo en cuenta que la velocidad de una persona adulta al caminar son 83 metros por minuto.
 * Los datos geográficos ayudan a resolverlo, ya que brindan el componente espacial lo cual nos permite vincular varias capas y asi poder obtener una solución a nuestro problema
 * Se propone:
-- Extraer los datos de la capa localidades para tener solamente la localidad de San Cristobal
-- Extraer los paraderos del sitp que se encuentran en la localidad de San Cristobal
-- Realizar un Intersect para determinar las manzanas que se encuentran en la localidad de San Cristobal
-- Realizar un Buffer a los paraderos del Sitp, para calcular su area de cobertura.
-- Realizar una consulta por localizacion para determinar cuales manzanas no tienen cobertura de los paraderos del SITP en San Cristobal
+    - Extraer los datos de la capa localidades para tener solamente la localidad de San Cristobal
+    - Extraer los paraderos del sitp que se encuentran en la localidad de San Cristobal
+    - Realizar un Intersect para determinar las manzanas que se encuentran en la localidad de San Cristobal
+    - Realizar un Buffer a los paraderos del Sitp, para calcular su area de cobertura.
+    - Realizar una consulta por localizacion para determinar cuales manzanas no tienen cobertura de los paraderos del SITP en San Cristobal
 
 ## 2. Fuente de datos
 * Capa de Localidades
