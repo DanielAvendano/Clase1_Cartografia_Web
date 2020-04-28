@@ -22,14 +22,19 @@
 Para procesar los datos se va a usar la herramienta postgres, como el ejercicio que voy a trabajar solo necesita datos de una localidad entonces se procedio a realizar una base de datos diferente para trabajar los datos, y despues si cargarlos a la destinada para la clase.
 
 * Primero se debe crear la base de datos
+
 ![imagen001](Imagenes/imagen001.PNG "imagen001")
 * se verifica y la extension de postgis no esta activa
+
 ![imagen002](Imagenes/imagen002.PNG "imagen002")
 * se procede a activar la extension de postgis
+
 ![imagen003](Imagenes/imagen003.PNG "imagen003")
 * para cargar los datos a la base de datos debemos hacer uso de la herramienta QGIS, primero se debe hacer la conexion a la base de datos, en la ventana "Browser" damos click derecho a la opcion "PosGIS" y se despliega una herramienta que dice "New Connection..." esto despliega una ventana que nos permitira conectar a la base de datos anteriormente creada y se llena de la siguiente manera
+
 ![imagen004](Imagenes/imagen004.PNG "imagen004")
 * posteriormente cargamos las capas que vamos a utilizar en el ejercicio seleccionamos la pestaña "Database" y la opcion "DB Manager..." y se tiene la siguiente ventana, ahi nos aseguramos de conectarnos a la base de datos de interes
+
 ![imagen005](Imagenes/imagen005.PNG "imagen005")
 * en la ventana de "DB Manager" se selecciona el boton "Import/Layer File..." y se importan las tres capas de la siguiente manera
 ![imagen006](Imagenes/imagen006.PNG "imagen006")
