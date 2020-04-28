@@ -389,7 +389,7 @@ http://34.83.176.208:18080/geoserver/clase_2020_01/wms?service=WMS&version=1.1.0
       ![imagen047](Imagenes/imagen043.PNG "imagen047")
 
 * Url 
-https://danielavendano.github.io/Clase1_Cartografia_Web/Tarea_2/Mapa/Mapa/index.html
+https://danielavendano.github.io/Clase1_Cartografia_Web/Tarea_2/Mapa/Mapa/mapa.html
     
 
 ## 8. Conclusiones
