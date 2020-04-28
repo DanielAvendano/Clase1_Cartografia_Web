@@ -17,14 +17,14 @@
     - Atributos que se tuvieron en cuenta: LocNombre, LocCodigo
     - Link de descarga: https://www.ideca.gov.co/recursos/mapas/mapa-de-referencia-para-bogota-dc
 
-* * Manzanas
+* Manzanas
     - Base de datos: GDR_V12.19.gdb
     - Dataset: Area Catastral
     - Feature Class: Manz
     - Atributos que se tuvieron en cuenta: mancodigo, seccodigo
     - Link de descarga: https://www.ideca.gov.co/recursos/mapas/mapa-de-referencia-para-bogota-dc
 
-* * Paraderos del SITP
+* Paraderos del SITP
     - Base de datos: GDR_V12.19.gdb
     - Dataset: Transporte_terrestre
     - Feature Class: Psitp
