@@ -100,7 +100,10 @@ Para procesar los datos se va a usar la herramienta postgres, como el ejercicio 
 ![imagen030](Imagenes/imagen030.PNG "imagen030")
 * se realizo para la capa "da_localidad_san_cristobal"
 * se introduce el codigo 
-<li><a href="(Estilos/da_estilo_localidad_sc.sld )"> </li>
+<ul>
+<li><a href="(Estilos/da_estilo_localidad_sc.sld )"> 
+</ul>
+</li>
 * previsualizacion de la leyenda
 ![imagen031](Imagenes/imagen031.PNG "imagen031")
 * previsualizacion de la capa
