@@ -380,18 +380,21 @@ http://34.83.176.208:18080/geoserver/clase_2020_01/wms?service=WMS&version=1.1.0
 ##### Publicacion en GITHUB pages desde QGIS
 
 * Para generar los mapas se debe contar con el Plugin de "Qgis2web"
-        ![imagen044](Imagenes/imagen044.PNG "imagen044")
+
+       ![imagen044](Imagenes/imagen044.PNG "imagen044")
 * Posteriormente se despliega la pestaña "Web" , se escoge la opcion "qgis2web" y la herramienta "Create web map"
+
       ![imagen045](Imagenes/imagen045.PNG "imagen045")
 * Se despliega una ventana donde se deben confgurar las propiedades del mapa web
+
       ![imagen046](Imagenes/imagen046.PNG "imagen046")
 * Cuando ya se han ajustado todas las propiedades, se da click en el boton "Exportar", y debe salir una ventana con el proceso Exitoso
+
       ![imagen047](Imagenes/imagen043.PNG "imagen047")
 
 * Url 
 https://danielavendano.github.io/Clase1_Cartografia_Web/Tarea_2/Mapa/Mapa/mapa.html
     
-
 ## 8. Conclusiones
 
 * Video Loom
