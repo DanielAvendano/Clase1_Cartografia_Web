@@ -6,7 +6,7 @@
       <se:Name>da_localidad_san_cristobal</se:Name>
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>Single symbol</se:Name>
+          <se:Name>Localidad San Cristobal</se:Name>
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#91522d</se:SvgParameter>
