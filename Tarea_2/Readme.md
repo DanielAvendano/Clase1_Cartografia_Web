@@ -122,6 +122,7 @@ Para procesar los datos se va a usar la herramienta postgres, como el ejercicio 
 
 ## 4. Capa simbología SLD
 
+#### Crear Simbologia
 * Para crear la simbologia en formato SLD se debe tener la capa desplegada en QGIS, y se le da click derecho y la opcion "Properties..."
 * se ajusta la simbologia de la manera adecuada
 
@@ -134,7 +135,7 @@ Para procesar los datos se va a usar la herramienta postgres, como el ejercicio 
 
 ![imagen030](Imagenes/imagen030.PNG "imagen030")
 * se realizo para la capa "da_localidad_san_cristobal"
-* se introduce el codigo 
+#### codigo 
 ~~~
   <NamedLayer>
     <se:Name>da_localidad_san_cristobal</se:Name>
@@ -189,8 +190,10 @@ Para procesar los datos se va a usar la herramienta postgres, como el ejercicio 
 * previsualizacion de la capa
 
 ![imagen031a](Imagenes/imagen031a.PNG "imagen031a")
+
+
 * se realizo para la capa "da_paraderos_sitp_san_cristobal"
-* codigo
+#### codigo
 ~~~
 <?xml version="1.0" encoding="UTF-8"?>
 <StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se">
@@ -228,8 +231,9 @@ Para procesar los datos se va a usar la herramienta postgres, como el ejercicio 
 * previsualizacion de la capa
 
 ![imagen032a](Imagenes/imagen032a.PNG "imagen032a")
+
 * se realizo para la capa "da_buffer_200_paraderos"
-* se introduce el codigo 
+#### codigo 
 ~~~
 <?xml version="1.0" encoding="UTF-8"?>
 <StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se">
@@ -269,8 +273,9 @@ Para procesar los datos se va a usar la herramienta postgres, como el ejercicio 
 
 * Para crear la simbologia en CSS debemos acceder a la pagina de geoserver y en la pestaña estilos agregar uno nuevo, se llenan los campos como acontinuacion y se escoje el formato "CSS" y en "Style Content" se selecciona polygon y generate para que genere el codigo
 * se realizo para la capa "da_manzanas_san_cristobal"
+
 ![imagen034](Imagenes/imagen034.PNG "imagen034")
-* se modifica el codigo para que quede de la siguiente manera
+#### codigo
 ~~~
 /* @title Manzanas San Cristobal */
 * {
@@ -289,11 +294,53 @@ Para procesar los datos se va a usar la herramienta postgres, como el ejercicio 
 
 ## 6. Capa simbologia YSLD
 
+#### crear Simbologia
 * Para crear la simbologia en YSLD debemos acceder a la pagina de geoserver y en la pestaña estilos agregar uno nuevo, se llenan los campos como acontinuacion y se escoje el formato "YSLD" y en "Style Content" se selecciona polygon y generate para que genere el codigo
 * Se realizo para la capa da_manzanas_sin_cobertura_completa
 
+![imagen037](Imagenes/imagen037.PNG "imagen037")
+
+
+#### codigo
+~~~
+title: Manzanas sin cobertura completa
+name: Manzanas sin cobertura completa
+symbolizers:
+- polygon:
+    stroke-width: 0.5
+    stroke-color: '#000000'
+    fill-color: '#ffff00'
+    fill-opacity: 0.5
+~~~
+* previsualizacion de la leyenda
+
+![imagen038](Imagenes/imagen038.PNG "imagen038")
+* previsualizacion de la capa
+
+![imagen038a](Imagenes/imagen038a.PNG "imagen038a")
+
 * Se realizo para la capa da_manzanas_sin_cobertura
 
+![imagen039](Imagenes/imagen039.PNG "imagen039")
+
+#### codigo
+~~~
+title: Manzanas sin cobertura
+name: Manzanas sin cobertura
+symbolizers:
+- polygon:
+    stroke-width: 0.26
+    stroke-color: '#000000'
+    fill-color: '#ff1300'
+    fill-opacity: 0.5
+~~~
+
+* previsualizacion de la leyenda
+
+![imagen040](Imagenes/imagen040.PNG "imagen040")
+* previsualizacion de la capa
+
+![imagen040a](Imagenes/imagen040a.PNG "imagen040a")
 
 
 ## 7. grupo de capas 
