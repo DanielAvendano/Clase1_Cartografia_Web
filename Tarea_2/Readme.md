@@ -397,4 +397,4 @@ https://danielavendano.github.io/Clase1_Cartografia_Web/Tarea_2/Mapa/Mapa/mapa.h
     
 ## 8. Conclusiones
 
-* Video Loom
+* Video https://www.loom.com/share/be39ed12d70e4610a1f4115cbb59cada
