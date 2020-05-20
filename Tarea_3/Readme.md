@@ -15,8 +15,17 @@ El enfoque propuesto fue
 * Informe_de_carga_a_rea
     - Atributos: Fecha, Region, Departamento, Latitud, Longitud, Aeropuerto, Carga Llegadas Nacionales, Carga Salidas Nacionales, Carga Llegada Internacionales, Carga Salidas Internacionales, Vuelos Carga, Vuelos Ambulancia, Vuelos Humanitarios, Total Vuelos, Total Carga Transportada TON, Carga Vuelos Nacionales TON, Carga Vuelos Internacionales TON
     - Atributos que se tuvieron en cuenta:
-    - Link de descarga https://www.datos.gov.co/Transporte/Informe-de-carga-a-rea/4wwa-qb9a
+    - Link de descarga: https://www.datos.gov.co/Transporte/Informe-de-carga-a-rea/4wwa-qb9a
 
+* Municipios
+    - Atributos: Codigo departamento, Nombre departamento, Codigo Municipio, Nombre municipio, Codigo DANE
+    - Atributos que se tuvieron en cuenta:
+    - Link de descarga: https://sites.google.com/site/seriescol/shapes
+
+* Casos Positivos COVID-19
+    - Atributos: fecha notificacion, divipola, ciudad, departamento, atencion, edad, sexo, tipo, estado, pais procedencia, inicio sintomas, fecha de muerte, fecha de diagnostico, fecha recuperado, fecha reporte web
+    - Atributos que se tuvieron en cuenta:
+    - Link de descarga: https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr/data
 # Procesamiento de datos
 
 * Primero se debe crear la base de datos
