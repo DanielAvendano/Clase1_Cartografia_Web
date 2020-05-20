@@ -13,9 +13,9 @@ El enfoque propuesto fue
 #### Fuentes de datos
 
 * Informe_de_carga_a_rea
-- Atributos: Fecha, Region, Departamento, Latitud, Longitud, Aeropuerto, Carga Llegadas Nacionales, Carga Salidas Nacionales, Carga Llegada Internacionales, Carga Salidas Internacionales, Vuelos Carga, Vuelos Ambulancia, Vuelos Humanitarios, Total Vuelos, Total Carga Transportada TON, Carga Vuelos Nacionales TON, Carga Vuelos Internacionales TON
-Atributos que se tuvieron en cuenta:
-- Link de descarga https://www.datos.gov.co/Transporte/Informe-de-carga-a-rea/4wwa-qb9a
+    - Atributos: Fecha, Region, Departamento, Latitud, Longitud, Aeropuerto, Carga Llegadas Nacionales, Carga Salidas Nacionales, Carga Llegada Internacionales, Carga Salidas Internacionales, Vuelos Carga, Vuelos Ambulancia, Vuelos Humanitarios, Total Vuelos, Total Carga Transportada TON, Carga Vuelos Nacionales TON, Carga Vuelos Internacionales TON
+    - Atributos que se tuvieron en cuenta:
+    - Link de descarga https://www.datos.gov.co/Transporte/Informe-de-carga-a-rea/4wwa-qb9a
 
 # Procesamiento de datos
 
