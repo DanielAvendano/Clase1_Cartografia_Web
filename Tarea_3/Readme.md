@@ -19,3 +19,25 @@ Link de descarga https://www.datos.gov.co/Transporte/Informe-de-carga-a-rea/4wwa
 
 # Procesamiento de datos
 
+* Primero se debe crear la base de datos
+
+![imagen001](Imagenes/imagen001.PNG "imagen001")
+
+
+* se procede a activar la extension de postgis
+
+![imagen002](Imagenes/imagen002.PNG "imagen002")
+
+* para cargar los datos a la base de datos debemos hacer uso de la herramienta QGIS, primero se debe hacer la conexion a la base de datos, en la ventana "Browser" damos click derecho a la opcion "PosGIS" y se despliega una herramienta que dice "New Connection..." esto despliega una ventana que nos permitira conectar a la base de datos anteriormente creada y se llena de la siguiente manera
+
+![imagen003](Imagenes/imagen003.PNG "imagen003")
+
+* en la ventana de "DB Manager" se selecciona el boton "Import/Layer File..." y se importa los shape y la tabla de la siguiente manera
+
+![imagen004](Imagenes/imagen004.PNG "imagen004")
+
+![imagen005](Imagenes/imagen005.PNG "imagen005")
+
+![imagen006](Imagenes/imagen006.PNG "imagen006")
+
+* 
