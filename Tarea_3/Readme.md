@@ -6,7 +6,7 @@
 
 Lo que se busca en este trabajo es mostar como ha sido el comportamiento aéreo desde que se decreto la cuarentena, hasta el dia 30 de abril
 
-El enfoque propuesto fue
+
 
 #### Boceto
 
