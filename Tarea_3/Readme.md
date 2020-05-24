@@ -232,3 +232,10 @@ El enfoque propuesto fue
 http://34.83.176.208/maps/31/view
 
 
+## Slide 
+
+https://slides.com/daniel310/comportamiento_aereo_2503_3004
+
+## Coclusiones
+
+
