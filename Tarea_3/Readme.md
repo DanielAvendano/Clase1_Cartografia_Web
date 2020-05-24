@@ -10,6 +10,14 @@ El enfoque propuesto fue
 
 #### Boceto
 
+* El boceto para Carto
+
+![imagen001m1](Imagenes/imagen001m1.PNG "imagen001m1")
+
+* El Boceto para Geonode
+
+![imagen001m2](Imagenes/imagen001m2.PNG "imagen001m2")
+
 #### Fuentes de datos
 
 * Informe_de_carga_a_rea
