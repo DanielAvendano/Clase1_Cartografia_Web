@@ -246,4 +246,6 @@ https://slides.com/daniel310/comportamiento_aereo_2503_3004
 
 ## Coclusiones
 
+https://www.loom.com/share/2df0af80e4704867904e0392ac2be66c
+
 
